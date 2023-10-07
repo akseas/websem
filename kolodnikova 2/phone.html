@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Healthy food</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/phone.css" rel="stylesheet">
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/shop.js"></script>
+</head>
+
+<body>  
+    
+    <nav class="nav_top">  
+     <ul>
+       <li><a href="index.html">О нас</a></li>
+       <li><a href="index.html#menu">Меню</a></li>
+       <li><a href="services.html">Доставка</a></li>
+       <li><a href="#">Контакты</a></li>
+     </ul>
+  
+    </nav> 
+    
+
+    <a href="#" class="cart-link" data-toggle="modal" data-target="#Cart"><img class="img__cart" src="img/cart.png" alt=""></a>
+   
+
+
+<section class="info-box">
+    <h1 class="info-box__title">Контактная информация</h1>
+
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4df01893124c060ec99904269a48b4bebeb74d8e2f66cbe7de1e78f33c4b85a8&amp;source=constructor" width="700" height="400" frameborder="0">
+    </iframe>
+
+    <div class="info-box__info">
+        <h2>Адрес:</h2>
+        <p class="text">ВУЗ «МГТУ Станкин» по адресу Москва, Центральный административный округ, Тверской район, Вадковский переулок, 3Ас1, метро Савёловская</p>
+        <h3><span>Телефон:</span> 8(994)-320-21-23</h3>
+        <h3><span>Часы работы:</span> Круглосуточно</h3>
+    </div>
+   
+    
+</section>
+<div class="modal fade" id="Cart">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Cart</h4>
+        </div>
+        <div class="modal-body cart-body">
+      
+        </div>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-close" ></button>
+  
+            <button onclick="clearCart(); $('.cart-body').html('')">Очистить корзину</button>
+          <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary btn-order">Заказать</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+</body>
+</html>

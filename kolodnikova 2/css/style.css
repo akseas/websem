@@ -1,0 +1,246 @@
+
+*{
+    box-sizing: border-box; /*применяется сразу ко всем элементам все отступы будут учитывается внутри элементов*/
+}
+@font-face {
+    font-family: 'RithalicaJopeBabes';
+    src: url(../fonts/RithalicaJopeBabes.woff2) format(woff2),
+    url(../fonts/RithalicaJopeBabes.woff) format(woff);
+}
+@font-face {
+    font-family: 'monotypecorsiva';
+    src: url(../fonts/monotypecorsiva.ttf);
+}
+body {
+    background-color:#7f8f18;
+}
+
+.nav_top{
+    
+    background-color: white;
+    width: 800px ;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding-top:10px ;
+    z-index: 2;
+    position: fixed; 
+    justify-content: center;
+    align-items: center;
+    left:350px;
+    border: 1px solid #0e300e ;
+    
+}
+
+a{
+    font-size: 20px;
+    color:#0e300e;
+}
+a:hover{
+    color:#257c25
+}
+a:link{
+    text-decoration: none!important;
+  }
+li{
+    display: inline;
+    margin-right: 100px;
+}
+li:last-child{
+    margin-right: 0px;
+}
+
+ul{
+    list-style-type: none;  /* убираем точки в списке */
+    text-align: center; /* выравнивание текста по центру применяется к контейнеру */
+    padding-left: 0px;
+}
+.section-about{
+    
+    height: 540px;
+    width: 1400px;
+    text-align: left;
+    padding-left:230px ;
+  
+
+}
+.section-about__block{
+    width: 450px;
+    height: 190px;
+    top:54%;
+    left: 50%;
+    padding-top:100px; /*внутренний отступ от границ элемента до его содержимого*/
+    
+}
+.section-about__title{
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'RithalicaJopeBabes';
+    font-weight:500;
+    color: white;
+}
+.healthy{
+    color:#0e300e;
+}
+.section-about__text{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+}
+
+.section-discription{
+    position:relative; 
+}
+
+#img1{
+    position:absolute; 
+    margin-left: 700px;
+    bottom: 400px;
+    left: 70px;
+    top:-470px;
+    z-index: 1;
+    width: 250px;
+}
+#img2{
+    position:absolute; 
+    margin-left: 700px;
+    bottom: 270px;
+    left: 200px;
+    top:-380px;
+    width: 250px;
+}
+
+
+.button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	border: 2px solid white;
+	border-radius:10px;
+	display:flex;
+    justify-content: right;
+	cursor:pointer;
+	color:#257c25;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 110px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+    position: absolute;
+    top: 370px;
+    left: 330px;
+}
+.button:hover {
+	background-color:#ffffff;
+    border-color: #0e300e ;
+}
+.button:active {
+	position: absolute;
+    top: 370px;
+    left: 330px;
+
+}
+/* Стили для кнопки профиля */
+
+ 
+  
+.page{
+    height:200px;
+    width: 1440px;
+   
+    background-color: #1c521c;
+    padding-top:50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.page__title{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+span{
+    font-weight: 700;
+}
+
+
+
+.add-to-basket-block {
+	margin-top: 7px;
+}
+
+
+.modal-image {
+	width: 100%;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+
+
+
+.caption {
+    
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #404f32;
+}
+
+.thumbnail {
+    padding: 0px;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #1e2922;
+}
+.amount{
+    display: inline-block;
+}
+.product{
+    display: inline;
+}
+.remove-from-cart{
+    display: inline;
+}
+footer {
+    margin: 50px 0;
+}
+.cart-link {
+    width: 75px;
+    height: 75px;
+    transition: 0.1s;
+    cursor: pointer;
+    position: fixed; /* Фиксированное расположение */
+    top: 10px; /* в правом верхнем углу */
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    
+  }
+.img__cart{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+  
